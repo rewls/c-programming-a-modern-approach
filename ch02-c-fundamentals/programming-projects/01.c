@@ -1,5 +1,5 @@
-/* check-sign.c (Chapter 2, Programming Projects, page 34, number 1) */
-/* Print check sign with asterisk */
+/* 01.c (Chapter 2, page 34, Programming Project 1) */
+/* Print check sign */
 
 #include <stdio.h>
 

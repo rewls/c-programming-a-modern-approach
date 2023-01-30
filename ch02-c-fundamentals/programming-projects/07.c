@@ -1,4 +1,4 @@
-/* pay.c (Chapter 2, Programming Projects, page 34, number 7) */
+/* 07.c (Chapter 2, page 34, Programming Project 7) */
 /* Pay using the smallest number of $20, $10, $5, and $1 bils */
 
 #include <stdio.h>
@@ -6,8 +6,10 @@
 int main(void)
 {
 	int money;
+
 	printf("Enter a dolloar amount: ");
 	scanf("%d", &money);
+
 	printf("$20 bills: %d\n", money / 20);
 	money -= (money / 20) * 20;
 	printf("$10 bills: %d\n", money / 10);

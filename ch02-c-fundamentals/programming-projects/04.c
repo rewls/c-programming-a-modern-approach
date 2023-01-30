@@ -1,4 +1,4 @@
-/* tax.c (Chapter 2, Programming Projects, page 34, number 4) */
+/* 04.c (Chapter 2, page 34, Programming Project 4) */
 /* Compute 5% tax */
 
 #include <stdio.h>

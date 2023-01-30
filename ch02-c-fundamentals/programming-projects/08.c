@@ -1,4 +1,4 @@
-/* loan.c (Chapter 2, Programming Projects, page 34, number 8) */
+/* 08.c (Chapter 2, page 34, Programming Project 8) */
 /* Calculates remaining balance on a loan after monthly payments */
 
 #include <stdio.h>
