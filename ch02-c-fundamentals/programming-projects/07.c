@@ -1,5 +1,7 @@
-/* 07.c (Chapter 2, page 34, Programming Project 7) */
-/* Pay using the smallest number of $20, $10, $5, and $1 bils */
+/*
+ * 07.c (Chapter 2, page 34, Programming Project 7)
+ * Pay using the smallest number of $20, $10, $5, and $1 bils
+ */
 
 #include <stdio.h>
 

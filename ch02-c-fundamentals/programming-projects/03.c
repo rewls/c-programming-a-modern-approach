@@ -1,5 +1,7 @@
-/* 03.c (Chapter 2, page 34, Programming Projects 3) */
-/* Compute the volume of a sphere with inputted radius  */
+/*
+ * 03.c (Chapter 2, page 34, Programming Projects 3)
+ * Compute the volume of a sphere with inputted radius
+ */
 
 #include <stdio.h>
 

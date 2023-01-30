@@ -1,5 +1,7 @@
-/* 06.c (Chapter 2, page 34, Programming Projects 6) */
-/* Compute value of the polynomial with Horner's Rule */
+/*
+ * 06.c (Chapter 2, page 34, Programming Projects 6)
+ * Compute value of the polynomial with Horner's Rule
+ */
 
 #include <stdio.h>
 

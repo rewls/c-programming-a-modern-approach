@@ -1,5 +1,7 @@
-/* 08.c (Chapter 2, page 34, Programming Project 8) */
-/* Calculates remaining balance on a loan after monthly payments */
+/*
+ * 08.c (Chapter 2, page 34, Programming Project 8)
+ * Calculates remaining balance on a loan after monthly payments
+ */
 
 #include <stdio.h>
 

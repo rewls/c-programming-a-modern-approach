@@ -1,5 +1,7 @@
-/* 01.c (Chapter 2, page 34, Programming Project 1) */
-/* Print check sign */
+/*
+ * 01.c (Chapter 2, page 34, Programming Project 1)
+ * Print check sign
+ */
 
 #include <stdio.h>
 

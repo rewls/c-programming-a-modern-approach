@@ -1,5 +1,7 @@
-/* 05.c (Chapter 2, page 34, Programming Project 5) */
-/* Compute value of the polynomial */
+/*
+ * 05.c (Chapter 2, page 34, Programming Project 5)
+ * Compute value of the polynomial
+ */
 
 #include <stdio.h>
 

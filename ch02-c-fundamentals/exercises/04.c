@@ -1,3 +1,8 @@
+/*
+ * 04.c (Chapter 2, page 33, Exercise 4)
+ * Print uninitialized int and float variables
+ */
+
 #include <stdio.h>
 
 int main(void)
