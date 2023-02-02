@@ -1,6 +1,6 @@
 # Ch2 C Fundamentals Exercises
 
-## Section 2.1
+## Section 2.1 Writing a Simple Program
 
 ### 1
 
@@ -20,7 +20,7 @@ $ gcc -O -Wall -W -pedantic -ansi -std=c89 01.c
 $
 ```
 
-## Section 2.2
+## Section 2.2 The General Form of a Simple Program
 
 ### 2
 
@@ -45,6 +45,8 @@ Parkinson's Law:
 Work expands so as to fill the time
 available for its completion
 ```
+
+## Section 2.4 Variables and Assignment
 
 ### 3
 
@@ -86,7 +88,7 @@ $ ./a.out
 
 - `f`, `j`는 동일한 값을 가지며, 4.6e-41에 가까운 값이 출력된다.
 
-## Section 2.7
+## Section 2.7 Identifiers
 
 ### 5
 
@@ -100,7 +102,7 @@ $ ./a.out
 
 - a, e가 C에서 keyword이다.
 
-## Section 2.8
+## Section 2.8 Layout of a C Program
 
 ### 8
 

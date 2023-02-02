@@ -1,6 +1,6 @@
 # Ch03 Formatted Input/Output Exercises
 
-## Section 3.1
+## Section 3.1 The printf Function
 
 ### 1
 
@@ -46,7 +46,7 @@ printf("%-8.3f", x);
 printf("%6.0f", x);
 ```
 
-## Section 3.2
+## Section 3.2 The scanf Function
 
 ### 3
 
