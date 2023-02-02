@@ -1,152 +1,150 @@
-# Ch7 Basic Types
-
-## Exercises
+# Ch7 Basic Types Exercises
 
 - page 155 ~ 157
 
-### Section 7.1 Integer Types
+## Section 7.1 Integer Types
 
-#### 1
+### 1
 
-##### a
+#### a
 
 - 63
 
-##### b
+#### b
 
 - 119
 
-##### c
+#### c
 
 - 2748
 
-### Section 7.2 Floating Types
+## Section 7.2 Floating Types
 
-#### 2
+### 2
 
 - c, d가 not legal하다.
 
 - a, b, e는 floating-point이다.
 
-#### 3
+### 3
 
 - b가 not legal하다.
 
-### Section 7.3 Character Types
+## Section 7.3 Character Types
 
-#### 4
+### 4
 
 - d가 not legal하다.
 
-#### 5
+### 5
 
 - b가 not legal하다.
 
-#### 6
+### 6
 
-##### a
+#### a
 
 - 최댓값이 31이므로 1 byte 공간을 갖는 `char`를 사용한다.
 
-##### b
+#### b
 
 - 최댓값이 366이므로 최소 2 bytes 공간을 갖는 `short`를 사용한다.
 
-##### c
+#### c
 
 - 최댓값이 24 * 60 = 1440이므로 최소 2 bytes 공간을 갖는 `short`를 사용한다.
 
-##### d
+#### d
 
 - 최댓값이 24 * 60 * 60 = 86400이므로 최소 4 bytes 공간을 갖는 `long`을 사용한다.
 
-#### 7
+### 7
 
-##### a
+#### a
 
 - `\10`
 
-##### b
+#### b
 
 - `\12`
 
-##### c
+#### c
 
 - `\15`
 
-##### d
+#### d
 
 - `\11`
 
-#### 8
+### 8
 
-##### a
+#### a
 
 - `\x08`
 
-##### b
+#### b
 
 - `\x0a`
 
-##### c
+#### c
 
 - `\x0d`
 
-##### d
+#### d
 
 - `\x09`
 
-### Section 7.4 Type Conversion
+## Section 7.4 Type Conversion
 
-#### 9
+### 9
 
 - `int`
 
-#### 10
+### 10
 
 - `unsigned int`
 
-#### 11
+### 11
 
 - `double`
 
-#### 12
+### 12
 
 - `i`가 `float`으로 convert되고 `i + f`를 수행하고, 그 결과는 `double`로 convert되어 `d`에 assign된다.
 
-#### 13
+### 13
 
-##### a
+#### a
 
 - value: -3, type: `int`
 
-##### b
+#### b
 
 - value: 7, type: `long`
 
-##### c
+#### c
 
 - value: 6.5, type: `float`
 
-##### d
+#### d
 
 - value: 3.75, type: `double`
 
-##### e
+#### e
 
 - value: -1, type: `double`
 
-##### f
+#### f
 
 - value: 6, type: `int`
 
-#### 14
+### 14
 
 - `f`가 `int`가 저장할 수 있는 최댓값을 초과하는 값을 가질 경우 잘못 계산할 수 있다.
 
-### Section 7.5 Type Definitions
+## Section 7.5 Type Definitions
 
-#### 15
+### 15
 
 ```c
 typedef char Int8;

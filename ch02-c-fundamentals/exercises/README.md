@@ -1,10 +1,8 @@
-# Ch2 C Fundamentals
+# Ch2 C Fundamentals Exercises
 
-## Exercises
+## Section 2.1
 
-### Section 2.1
-
-#### 1
+### 1
 
 ```sh
 $ gcc -O -Wall -W -pedantic -ansi -std=c89 hello-world.c
@@ -22,11 +20,11 @@ $ gcc -O -Wall -W -pedantic -ansi -std=c89 01.c
 $
 ```
 
-### Section 2.2
+## Section 2.2
 
-#### 2
+### 2
 
-##### a
+#### a
 
 - directives 1개: `#include`
 
@@ -40,7 +38,7 @@ $
 
     - `return 0;`
 
-##### b
+#### b
 
 ```sh
 Parkinson's Law:
@@ -48,11 +46,11 @@ Work expands so as to fill the time
 available for its completion
 ```
 
-#### 3
+### 3
 
 - `03.c`
 
-#### 4
+### 4
 
 - `04.c`
 
@@ -88,33 +86,33 @@ $ ./a.out
 
 - `f`, `j`는 동일한 값을 가지며, 4.6e-41에 가까운 값이 출력된다.
 
-### Section 2.7
+## Section 2.7
 
-#### 5
+### 5
 
 - a는 숫자로 시작하기 때문에 legal C identifier가 아니다.
 
-#### 6
+### 6
 
 - traditional C에서 가독성을 위해 필요한 부분에서 underscore를 하나씩 삽입하는 것이 일반적이다. 두 개 이상의 underscore를 연달아 사용하는 것은 가독성에 도움되지 않고, 몇 개의 underscore를 사용했는지 식별하기도 어렵기 때문에 좋은 생각이 아니다.
 
-#### 7
+### 7
 
 - a, e가 C에서 keyword이다.
 
-### Section 2.8
+## Section 2.8
 
-#### 8
+### 8
 
 - token 14개: `answer`, `=`, `(`, `3`, `*`, `q`, `-`, `p`, `*`, `p`, `)`, `/`, `3`, `;`
 
-#### 9
+### 9
 
 ```c
 answer = (3 * q - p * p) / 3;
 ```
 
-#### 10
+### 10
 
 - `#include` `<stdio.h> 사이
 

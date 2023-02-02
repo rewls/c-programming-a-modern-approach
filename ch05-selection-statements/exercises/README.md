@@ -1,74 +1,72 @@
-# Ch5 Selection Statements
-
-## Exercises
+# Ch5 Selection Statements Exercises
 
 - page 93 ~ 95
 
-### Section 5.1 Logical Expressions
+## Section 5.1 Logical Expressions
 
-#### 1
+### 1
 
-##### a
-
-- `1`
-
-##### b
+#### a
 
 - `1`
 
-##### c
+#### b
 
 - `1`
 
-##### d
+#### c
+
+- `1`
+
+#### d
 
 - `0`
 
-#### 2
+### 2
 
-##### a
+#### a
 
 - `1`
 
-##### b
+#### b
 
 - `1` 
 
-##### c
+#### c
 
 - `1`
 
-##### d
+#### d
 
 - `1`
 
-#### 3
+### 3
 
-##### a
+#### a
 
 - `1 3 4 5`
 
-##### b
+#### b
 
 - `0 7 8 9`
 
-##### c
+#### c
 
 - `1 8 8 9`
 
-##### d
+#### d
 
 - `1 2 1 2`
 
-#### 4
+### 4
 
 - `(i > j) - (i < j)`
 
 - `i < j ? -1 : (i > j ? -1 : 0)`
 
-### Section 5.2 The if Statement
+## Section 5.2 The if Statement
 
-#### 5
+### 5
 
 - legal하다.
 
@@ -79,13 +77,13 @@ n is between 1 and 10
 
 ```
 
-#### 6
+### 6
 
 - legal하다.
 
 - `-`는 arithmetic operator이므로 equality operator보다 precedence가 높다. 따라서 `n`이 5일 때 `1-10`, 즉 `-9`와 같지 않기 때문에 아무것도 출력되지 않는다.
 
-#### 7
+### 7
 
 - `i`이 17, -17일 때 모두 다음을 출력한다.
 
@@ -94,23 +92,23 @@ n is between 1 and 10
 
 ```
 
-#### 8
+### 8
 
 ```c
 teenager = age >= 13 && age <= 19;
 ```
 
-#### 9
+### 9
 
 - 동일하다.
 
-### Section 5.3
+## Section 5.3
 
-#### 10
+### 10
 
 - `onetwo`를 출력한다.
 
-#### 11
+### 11
 
 ```c
 switch (area-code) {
