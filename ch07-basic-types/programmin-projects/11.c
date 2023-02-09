@@ -6,7 +6,8 @@
 
 #include <stdio.h>
 
-int main(void) {
+int main(void)
+{
     char first_initial, ch;
 
     printf("Enter a first and last name: ");
