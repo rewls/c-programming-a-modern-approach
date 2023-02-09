@@ -1,5 +1,5 @@
 /*
- * 03.c (Chapter 8, page 178, Exercise 3)
+ * 03.c (Chapter 8, page 178, Programming Project 3)
  * Checks numbers for repeated digits
  */
 

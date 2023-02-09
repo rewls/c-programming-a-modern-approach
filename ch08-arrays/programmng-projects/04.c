@@ -1,5 +1,5 @@
 /*
- * 04.c (Chapter 8, page 179, Exercise 4)
+ * 04.c (Chapter 8, page 179, Programming Project 4)
  * Reverses a series of numbers
  */
 

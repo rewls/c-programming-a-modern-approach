@@ -1,5 +1,5 @@
 /*
- * 01.c (Chapter 8, page 178, Exercise 1)
+ * 01.c (Chapter 8, page 178, Programming Project 1)
  * Check numbers for repeated digits
  */
 

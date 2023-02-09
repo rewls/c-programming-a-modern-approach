@@ -1,5 +1,5 @@
 /*
- * 11.c (Chapter 5, page 180, programming project 11)
+ * 11.c (Chapter 8, page 180, Programming Project 11)
  * Ask the user to enter the amount of taxable income, then display the tax due
  */
 

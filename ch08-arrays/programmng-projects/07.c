@@ -1,5 +1,5 @@
 /*
- * 07.c (Chapter 8, page 179, Exercise 7)
+ * 07.c (Chapter 8, page 179, Programming Project 7)
  * Read a 5 * 5 array of integers and then prints the row sums and the column sums
  */
 

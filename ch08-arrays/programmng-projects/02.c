@@ -1,5 +1,5 @@
 /*
- * 02.c (Chapter 8, page 178, Exercise 2)
+ * 02.c (Chapter 8, page 178, Programming Project 2)
  * Print a table showing how many times each digit appears in the number
  */
 

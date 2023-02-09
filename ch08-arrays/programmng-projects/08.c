@@ -1,5 +1,5 @@
 /*
- * 08.c (Chapter 8, page 179, Exercise 8)
+ * 08.c (Chapter 8, page 179, Programming Project 8)
  * Prompts for five quiz grades for each of five students
  * then computes the total score and average score for each student,
  * and the average score, high score for each quiz

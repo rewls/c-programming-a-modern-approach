@@ -1,5 +1,5 @@
 /*
- * 08.c (Chapter 8, page 179, Exercise 8)
+ * 09.c (Chapter 8, page 179, Programming Project 9)
  * Generate a "random walk" across a 10 * 10 array.
  */
 
@@ -12,7 +12,8 @@
 
 int main(void)
 {
-    int route[SIZE][SIZE], current_row, current_column, next_row, next_culumn, direction, block_count,
+    char walk[SIZE][SIZE];
+    int current_row, current_column, next_row, next_culumn, direction, block_count,
 	i, j;
     const int offset_row[N_DIRECTIONS] = {-1, 0, 1, 0},
 	  offset_column[N_DIRECTIONS] = {0, 1, 0, -1};
@@ -20,7 +21,7 @@ int main(void)
 
     for (i = 0; i < SIZE; i++) {
 	for (j = 0; j < SIZE; j++) {
-	    route[i][j] = '.';
+	    walk[i][j] = '.';
 	}
     }
 
@@ -30,13 +31,13 @@ int main(void)
     ch = 'A';
     block_count = 0;
     while (ch <= 'Z') {
-	route[current_row][current_column] = ch;
+	walk[current_row][current_column] = ch;
 	direction = rand() % 4;
 	next_row = current_row + offset_row[direction];
 	next_culumn = current_column + offset_column[direction];
 	if (next_row < SIZE && next_row >= 0
 		&& next_culumn < SIZE && next_culumn >= 0
-		&& route[next_row][next_culumn] == '.') {
+		&& walk[next_row][next_culumn] == '.') {
 	    current_row = next_row;
 	    current_column = next_culumn;
 	    ch++;
@@ -50,7 +51,7 @@ int main(void)
 		next_culumn = current_column + offset_column[i];
 		if (next_row < SIZE && next_row >= 0
 			&& next_culumn < SIZE && next_culumn >= 0
-			&& route[next_row][next_culumn] == '.') {
+			&& walk[next_row][next_culumn] == '.') {
 		    break;
 		}
 	    }
@@ -62,7 +63,7 @@ int main(void)
 
     for (i = 0; i < SIZE; i++)  {
 	for (j = 0; j < SIZE; j++) {
-	    printf("%c ", route[i][j]);
+	    printf("%c ", walk[i][j]);
 	}
 	printf("\n");
     }

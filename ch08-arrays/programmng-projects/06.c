@@ -1,5 +1,5 @@
 /*
- * 06.c (Chapter 8, page 179, Exercise 6)
+ * 06.c (Chapter 8, page 179, Programming Project 6)
  * Read a message entered by the user and translates it into B1FF-speak
  */
 

@@ -1,5 +1,5 @@
 /*
- * 05.c (Chapter 8, page 179, Exercise 5)
+ * 05.c (Chapter 8, page 179, Programming Project 5)
  * Prints a table of compound interest
  */
 
