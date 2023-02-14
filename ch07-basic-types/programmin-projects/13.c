@@ -15,20 +15,20 @@ int main(void) {
     average = 0.0f;
     ch = getchar();
     while (ch != '\n') {
-	while (ch == ' ') {
-	    ch = getchar();
-	}
-	length = 0;
-	while (ch != ' ' && ch != '\n') {
-	    length++;
-	    ch = getchar();
-	}
-	average += length;
-	n++;
+        while (ch == ' ') {
+            ch = getchar();
+        }
+        length = 0;
+        while (ch != ' ' && ch != '\n') {
+            length++;
+            ch = getchar();
+        }
+        average += length;
+        n++;
     }
 
     if (n > 0) {
-	average /= n;
+        average /= n;
     }
 
     printf("Average word length: %.1f", average);

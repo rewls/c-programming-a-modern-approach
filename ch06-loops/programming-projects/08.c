@@ -15,14 +15,14 @@ int main(void)
     scanf("%d", &start_day);
 
     for (j = 1; j < start_day; j++) {
-	printf("   ");
+        printf("   ");
     }
 
     for (i = 1; i <= n_days; i++) {
-	printf("%2d ", i);
-	if ((i + start_day - 1) % 7 == 0) {
-	    printf("\n");
-	}
+        printf("%2d ", i);
+        if ((i + start_day - 1) % 7 == 0) {
+            printf("\n");
+        }
     }
 
     return 0;

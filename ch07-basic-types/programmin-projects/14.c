@@ -16,8 +16,8 @@ int main(void)
 
     y = y_next = 1;
     do {
-	y = y_next;
-	y_next = (y + x / y) / 2;
+        y = y_next;
+        y_next = (y + x / y) / 2;
     } while (fabs(y - y_next) >= y * 1.0e-5);
 
     printf("Square root: %.5f", y);

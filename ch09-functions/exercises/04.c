@@ -10,16 +10,16 @@
 int day_of_year(int month, int day, int year)
 {
     int day_of_month[N_MONTHS] = {31, 28, 31, 30, 31, 30,
-				  31, 31, 30, 31, 30, 31},
-	n_days, i;
+                                  31, 31, 30, 31, 30, 31},
+        n_days, i;
 
     if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) {
-	day_of_month[2 - 1]++;
+        day_of_month[2 - 1]++;
     }
 
     n_days = 0;
     for (i = 1; i < month; i++) {
-	n_days += day_of_month[i - 1]; 
+        n_days += day_of_month[i - 1]; 
     }
     n_days += day;
 

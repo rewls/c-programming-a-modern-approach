@@ -17,30 +17,30 @@ int main(void)
     int magic_array[size][size];
 
     for (row = 0; row < size; row++) {
-	for (column = 0; column < size; column++) {
-	    magic_array[row][column] = 0;
-	}
+        for (column = 0; column < size; column++) {
+            magic_array[row][column] = 0;
+        }
     }
 
     row = 0;
     column = size / 2;
     for (i = 1; i <= size * size; i++) {
-	magic_array[row][column] = i;
-	next_row = (size + row - 1) % size;
-	next_column = (column + 1) % size;
-	if (magic_array[next_row][next_column] != 0) {
-	    row = (row + 1) % size;
-	} else {
-	    row = next_row;
-	    column = next_column;
-	}
+        magic_array[row][column] = i;
+        next_row = (size + row - 1) % size;
+        next_column = (column + 1) % size;
+        if (magic_array[next_row][next_column] != 0) {
+            row = (row + 1) % size;
+        } else {
+            row = next_row;
+            column = next_column;
+        }
     }
 
     for (row = 0; row < size; row++) {
-	for (column = 0; column < size; column++) {
-	    printf("%5d", magic_array[row][column]);
-	}
-	printf("\n");
+        for (column = 0; column < size; column++) {
+            printf("%5d", magic_array[row][column]);
+        }
+        printf("\n");
     }
 
     return 0;

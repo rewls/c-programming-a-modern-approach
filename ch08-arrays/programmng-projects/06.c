@@ -15,21 +15,21 @@ int main(void) {
     printf("Enter message: ");
 
     for (i = 0; (ch[i] = getchar()) != '\n'; i++) {
-	ch[i] = toupper(ch[i]);
-	switch (ch[i]) {
-	    case 'A': ch[i] = '4'; break;
-	    case 'B': ch[i] = '8'; break;
-	    case 'E': ch[i] = '3'; break;
-	    case 'I': ch[i] = '1'; break;
-	    case 'O': ch[i] = '0'; break;
-	    case 'S': ch[i] = '5'; break;
-	}
+        ch[i] = toupper(ch[i]);
+        switch (ch[i]) {
+            case 'A': ch[i] = '4'; break;
+            case 'B': ch[i] = '8'; break;
+            case 'E': ch[i] = '3'; break;
+            case 'I': ch[i] = '1'; break;
+            case 'O': ch[i] = '0'; break;
+            case 'S': ch[i] = '5'; break;
+        }
     }
     count = i;
 
     printf("In B1FF-speak: ");
     for (i = 0; i < count; i++) {
-	printf("%c", ch[i]);
+        printf("%c", ch[i]);
     }
     printf("!!!!!!!!!!");
 

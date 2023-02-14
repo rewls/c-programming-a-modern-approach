@@ -62,36 +62,36 @@ void read_cards(void)
 
         printf("Enter a card: ");
 
-	rank_ch = getchar();
-	switch (rank_ch) {
-	    case '0':           exit(EXIT_SUCCESS);
-	    case '2':           rank = 0; break;
-	    case '3':           rank = 1; break;
-	    case '4':           rank = 2; break;
-	    case '5':           rank = 3; break;
-	    case '6':           rank = 4; break;
-	    case '7':           rank = 5; break;
-	    case '8':           rank = 6; break;
-	    case '9':           rank = 7; break;
-	    case 't': case 'T': rank = 8; break;
-	    case 'j': case 'J': rank = 9; break;
-	    case 'q': case 'Q': rank = 10; break;
-	    case 'k': case 'K': rank = 11; break;
-	    case 'a': case 'A': rank = 12; break;
-	    default:            bad_card = true;
-	}
+        rank_ch = getchar();
+        switch (rank_ch) {
+            case '0':           exit(EXIT_SUCCESS);
+            case '2':           rank = 0; break;
+            case '3':           rank = 1; break;
+            case '4':           rank = 2; break;
+            case '5':           rank = 3; break;
+            case '6':           rank = 4; break;
+            case '7':           rank = 5; break;
+            case '8':           rank = 6; break;
+            case '9':           rank = 7; break;
+            case 't': case 'T': rank = 8; break;
+            case 'j': case 'J': rank = 9; break;
+            case 'q': case 'Q': rank = 10; break;
+            case 'k': case 'K': rank = 11; break;
+            case 'a': case 'A': rank = 12; break;
+            default:            bad_card = true;
+        }
 
-	suit_ch = getchar();
-	switch (suit_ch) {
-	    case 'c': case 'C': suit = 0; break;
-	    case 'd': case 'D': suit = 1; break;
-	    case 'h': case 'H': suit = 2; break;
-	    case 's': case 'S': suit = 3; break;
-	    default:            bad_card = true;
-	}
+        suit_ch = getchar();
+        switch (suit_ch) {
+            case 'c': case 'C': suit = 0; break;
+            case 'd': case 'D': suit = 1; break;
+            case 'h': case 'H': suit = 2; break;
+            case 's': case 'S': suit = 3; break;
+            default:            bad_card = true;
+        }
 
-	while ((ch = getchar()) != '\n')
-	    if (ch != ' ') bad_card = true;
+        while ((ch = getchar()) != '\n')
+            if (ch != ' ') bad_card = true;
 
         if (bad_card)
             printf("Bad card; ignored.\n");
@@ -132,14 +132,14 @@ void analyze_hand(void)
             flush = true;
 
     if (flush) {
-	for (rank = 8; rank < 13; rank++) {
-	    if (num_in_rank[rank] < 1) {
-		break;
-	    }
-	}
-	if (rank == NUM_RANKS) {
-	    royal = true;
-	}
+        for (rank = 8; rank < 13; rank++) {
+            if (num_in_rank[rank] < 1) {
+                break;
+            }
+        }
+        if (rank == NUM_RANKS) {
+            royal = true;
+        }
     }
 
     /* check for straight */
@@ -168,12 +168,12 @@ void analyze_hand(void)
  **********************************************************/
 void print_result(void)
 {
-    if (royal && flush)	   printf("Royal flush");
+    if (royal && flush)           printf("Royal flush");
     else if (straight &&
-	    flush)	   printf("Straight flush");
+            flush)           printf("Straight flush");
     else if (four)         printf("Four of a kind");
     else if (three &&
-	     pairs == 1)   printf("Full house");
+             pairs == 1)   printf("Full house");
     else if (flush)        printf("Flush");
     else if (straight)     printf("Straight");
     else if (three)        printf("Three of a kind");

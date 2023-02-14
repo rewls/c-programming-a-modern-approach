@@ -22,9 +22,9 @@ int main(void)
     read_word(counts2);
 
     if (equal_array(counts1, counts2) == true) {
-	printf("The words are anagrams.");
+        printf("The words are anagrams.");
     } else {
-	printf("The words are not anagrams.");
+        printf("The words are not anagrams.");
     }
 
     return 0;
@@ -35,9 +35,9 @@ void read_word(int counts[N_ALPHABETS])
     char ch;
 
     while ((ch = getchar()) != '\n') {
-	if (isalpha((int)ch)) {
-	    counts[tolower(ch) - 'a']++;
-	}
+        if (isalpha((int)ch)) {
+            counts[tolower(ch) - 'a']++;
+        }
     }
 }
 
@@ -46,9 +46,9 @@ bool equal_array(int counts1[N_ALPHABETS], int counts2[N_ALPHABETS])
     char ch;
 
     for (ch = 'a'; ch <= 'z'; ch++) {
-	if (counts1[ch - 'a'] != counts2[ch - 'a']) {
-	    break;
-	}
+        if (counts1[ch - 'a'] != counts2[ch - 'a']) {
+            break;
+        }
     }
 
     return ch > 'z' ? true : false;

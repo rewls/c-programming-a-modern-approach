@@ -31,23 +31,23 @@ void create_magic_square(int n, char magic_square[n][n])
     int row, column, next_row, next_column, i;
 
     for (row = 0; row < n; row++) {
-	for (column = 0; column < n; column++) {
-	    magic_square[row][column] = 0;
-	}
+        for (column = 0; column < n; column++) {
+            magic_square[row][column] = 0;
+        }
     }
 
     row = 0;
     column = n / 2;
     for (i = 1; i <= n * n; i++) {
-	magic_square[row][column] = i;
-	next_row = (n + row - 1) % n;
-	next_column = (column + 1) % n;
-	if (magic_square[next_row][next_column] != 0) {
-	    row = (row + 1) % n;
-	} else {
-	    row = next_row;
-	    column = next_column;
-	}
+        magic_square[row][column] = i;
+        next_row = (n + row - 1) % n;
+        next_column = (column + 1) % n;
+        if (magic_square[next_row][next_column] != 0) {
+            row = (row + 1) % n;
+        } else {
+            row = next_row;
+            column = next_column;
+        }
     }
 }
 
@@ -56,9 +56,9 @@ void print_magic_square(int n, char magic_square[n][n])
     int row, column;
 
     for (row = 0; row < n; row++) {
-	for (column = 0; column < n; column++) {
-	    printf("%5d", magic_square[row][column]);
-	}
-	printf("\n");
+        for (column = 0; column < n; column++) {
+            printf("%5d", magic_square[row][column]);
+        }
+        printf("\n");
     }
 }

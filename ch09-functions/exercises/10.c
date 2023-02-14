@@ -14,9 +14,9 @@ int largest(int a[], int n)
 
     result = a[0];
     for (i = 1; i < n; i++) {
-	if (result < a[i]) {
-	    result = a[i];
-	}
+        if (result < a[i]) {
+            result = a[i];
+        }
     }
 
     return result;
@@ -30,7 +30,7 @@ double average(int a[], int n)
 
     result = 0.0;
     for (i = 0; i < n; i++) {
-	result += a[i];
+        result += a[i];
     }
     result /= n;
 
@@ -44,9 +44,9 @@ int num_positive(int a[], int n)
 
     result = 0;
     for (i = 0; i < n; i++) {
-	if (a[i] >= 0) {
-	    result++;
-	}
+        if (a[i] >= 0) {
+            result++;
+        }
     }
 
     return result;

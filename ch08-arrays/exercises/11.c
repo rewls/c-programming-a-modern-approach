@@ -13,16 +13,16 @@ int main(void)
     int i, j;
 
     for (i = 0; i < SIZE; i++) {
-	for (j = 0; j < SIZE; j++) {
-	    checker_board[i][j] = (i + j) % 2 == 0 ? 'B' : 'R';
-	}
+        for (j = 0; j < SIZE; j++) {
+            checker_board[i][j] = (i + j) % 2 == 0 ? 'B' : 'R';
+        }
     }
 
     for (i = 0; i < SIZE; i++) {
-	for (j = 0; j < SIZE; j++) {
-	    printf("%c ", checker_board[i][j]);
-	}
-	printf("\n");
+        for (j = 0; j < SIZE; j++) {
+            printf("%c ", checker_board[i][j]);
+        }
+        printf("\n");
     }
 
     return 0;

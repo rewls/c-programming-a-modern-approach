@@ -22,9 +22,9 @@ int main(void)
     monthly_interest_rate = interest_rate / 12;
 
     for (int i = 1; i <= n_payments; i++) {
-	loan *= 1 + (monthly_interest_rate / 100);
-	loan -= monthly_payment;
-	printf("Balance remaining after payment %d: $%.2f\n", i, loan);
+        loan *= 1 + (monthly_interest_rate / 100);
+        loan -= monthly_payment;
+        printf("Balance remaining after payment %d: $%.2f\n", i, loan);
     }
 
     return 0;

@@ -15,8 +15,8 @@ int main(void)
     printf("The reversal is: ");
 
     do {
-	printf("%d", n % 10);
-	n /= 10;
+        printf("%d", n % 10);
+        n /= 10;
     } while (n > 0);
 
     return 0;

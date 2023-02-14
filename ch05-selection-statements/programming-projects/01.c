@@ -13,9 +13,9 @@ int main(void)
     scanf("%d", &n);
 
     printf("The number %d has %d digits", n,
-	    n >= 1000 ? 4 :
-	    n >= 100 ? 3 :
-	    n >= 10 ? 2 : 1);
+            n >= 1000 ? 4 :
+            n >= 100 ? 3 :
+            n >= 10 ? 2 : 1);
 
     return 0;
 }

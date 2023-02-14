@@ -17,8 +17,8 @@ int main(void)
     factorial = 1;
     e = 1.0f;
     for (i = 1 ; i <= n; i++) {
-	factorial *= i;
-	e += 1.0f / factorial;
+        factorial *= i;
+        e += 1.0f / factorial;
     }
     
     printf("Approximated e: %f", e);

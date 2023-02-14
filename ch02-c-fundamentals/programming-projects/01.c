@@ -7,12 +7,12 @@
 
 int main(void)
 {
-	printf("       *\n");
-	printf("      *\n");
-	printf("     *\n");
-	printf("*   *\n");
-	printf(" * *\n");
-	printf("  *");
+    printf("       *\n");
+    printf("      *\n");
+    printf("     *\n");
+    printf("*   *\n");
+    printf(" * *\n");
+    printf("  *");
 
-	return 0;
+    return 0;
 }

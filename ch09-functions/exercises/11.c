@@ -12,9 +12,9 @@ float compute_GPA(char grades[], int n)
 
     gpa = 0.0f;
     for (i = 0; i < n; i++) {
-	if (grades[i] != 'F') {
-	    gpa += 4 - (grades[i] - 'A');
-	}
+        if (grades[i] != 'F') {
+            gpa += 4 - (grades[i] - 'A');
+        }
     }
     gpa /= n;
 

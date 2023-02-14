@@ -23,10 +23,10 @@ int main(void)
 int power(int x, int n)
 {
     if (n == 0) {
-	return 1;
+        return 1;
     }
     if (n != 2 && n % 2 == 0) {
-	return power(power(x, n / 2), 2);
+        return power(power(x, n / 2), 2);
     }
     return x * power(x, n - 1);
 }

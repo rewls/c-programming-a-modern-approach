@@ -15,27 +15,27 @@ int main(void)
 
     printf("Enter first word: ");
     while ((ch = getchar()) != '\n') {
-	if (isalpha((int)ch)) {
-	    track[tolower(ch) - 'a']++;
-	}
+        if (isalpha((int)ch)) {
+            track[tolower(ch) - 'a']++;
+        }
     }
     printf("Enter second word: ");
     while ((ch = getchar()) != '\n') {
-	if (isalpha((int)ch)) {
-	    track[tolower(ch) - 'a']--;
-	}
+        if (isalpha((int)ch)) {
+            track[tolower(ch) - 'a']--;
+        }
     }
 
     for (ch = 'a'; ch <= 'z'; ch++) {
-	if (track[ch - 'a'] != 0) {
-	    break;
-	}
+        if (track[ch - 'a'] != 0) {
+            break;
+        }
     }
 
     if (ch > 'z') {
-	printf("The words are anagrams.");
+        printf("The words are anagrams.");
     } else {
-	printf("The words are not anagrams.");
+        printf("The words are not anagrams.");
     }
 
     return 0;

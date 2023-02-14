@@ -15,17 +15,17 @@ int main(void)
     printf("Enter phone number: ");
 
     for (i = 0; (ch = getchar()) != '\n'; i++) {
-	if (ch >= 'A' && ch <= 'Y') {
-	    phone_number_numeric[i] = (ch - 'A') / 3 + '2';
-	} else {
-	    phone_number_numeric[i] = ch;
-	}
+        if (ch >= 'A' && ch <= 'Y') {
+            phone_number_numeric[i] = (ch - 'A') / 3 + '2';
+        } else {
+            phone_number_numeric[i] = ch;
+        }
     }
     count = i;
 
     printf("In numeric form: ");
     for (i = 0; i < count; i++) {
-	printf("%c", phone_number_numeric[i]);
+        printf("%c", phone_number_numeric[i]);
     }
 
     return 0;

@@ -13,17 +13,17 @@ int main(void)
     scanf("%d", &wind_speed);
 
     if (wind_speed < 1) {
-	printf("Calm");
+        printf("Calm");
     } else if (wind_speed < 4) {
-	printf("Light air");
+        printf("Light air");
     } else if (wind_speed < 28) {
-	printf("Breeze");
+        printf("Breeze");
     } else if (wind_speed < 48) {
-	printf("Gale");
+        printf("Gale");
     } else if (wind_speed < 64) {
-	printf("Storm")
+        printf("Storm")
     } else {
-	printf("Hurricane");
+        printf("Hurricane");
     }
 
     return 0;

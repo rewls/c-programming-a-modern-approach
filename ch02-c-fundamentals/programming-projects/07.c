@@ -7,18 +7,18 @@
 
 int main(void)
 {
-	int money;
+    int money;
 
-	printf("Enter a dolloar amount: ");
-	scanf("%d", &money);
+    printf("Enter a dolloar amount: ");
+    scanf("%d", &money);
 
-	printf("$20 bills: %d\n", money / 20);
-	money -= (money / 20) * 20;
-	printf("$10 bills: %d\n", money / 10);
-	money -= (money / 10) * 10;
-	printf(" $5 bills: %d\n", money / 5);
-	money -= (money / 5) * 5;
-	printf(" $1 bills: %d", money / 1);
+    printf("$20 bills: %d\n", money / 20);
+    money -= (money / 20) * 20;
+    printf("$10 bills: %d\n", money / 10);
+    money -= (money / 10) * 10;
+    printf(" $5 bills: %d\n", money / 5);
+    money -= (money / 5) * 5;
+    printf(" $1 bills: %d", money / 1);
 
-	return 0;
+    return 0;
 }

@@ -23,15 +23,15 @@ int main(void)
     n_wins = 0;
     n_losses = 0;
     do {
-	if (play_game() == true) {
-	    n_wins++;
-	} else {
-	    n_losses++;
-	}
-	putchar('\n');
-	printf("Play again? ");
-	scanf(" %c", &ch);
-	putchar('\n');
+        if (play_game() == true) {
+            n_wins++;
+        } else {
+            n_losses++;
+        }
+        putchar('\n');
+        printf("Play again? ");
+        scanf(" %c", &ch);
+        putchar('\n');
     } while (tolower(ch) == 'y');
 
     printf("Wins: %d  Losses: %d", n_wins, n_losses);
@@ -57,30 +57,30 @@ bool play_game(void)
     printf("You rolled: %d\n", sum);
 
     switch (sum) {
-	case 7: case 11:
-	    printf("You win!\n");
-	    return true;
-	    break;
-	case 2: case 3: case 12:
-	    printf("You lose!\n");
-	    return false;
-	    break;
-	default:
-	    point = sum;
-	    printf("Your point is %d\n", sum);
-	    break;
+        case 7: case 11:
+            printf("You win!\n");
+            return true;
+            break;
+        case 2: case 3: case 12:
+            printf("You lose!\n");
+            return false;
+            break;
+        default:
+            point = sum;
+            printf("Your point is %d\n", sum);
+            break;
     }
 
     do {
-	sum = roll_dice();
-	printf("You rolled: %d\n", sum);
+        sum = roll_dice();
+        printf("You rolled: %d\n", sum);
     } while (sum != point && sum != 7);
 
     if (sum == point) {
-	printf("You win!\n");
-	return true;
+        printf("You win!\n");
+        return true;
     } else {
-	printf("You lose!\n");
-	return false;
+        printf("You lose!\n");
+        return false;
     }
 }

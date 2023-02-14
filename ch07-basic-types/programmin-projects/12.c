@@ -14,21 +14,21 @@ int main(void)
     printf("Enter an expression: ");
     scanf("%f", &result);
     while ((operator = getchar()) != '\n') {
-	scanf("%f", &operand);
-	switch (operator) {
-	    case '+':
-		result += operand;
-		break;
-	    case '-':
-		result -= operand;
-		break;
-	    case '*':
-		result *= operand;
-		break;
-	    case '/':
-		result /= operand;
-		break;
-	}
+        scanf("%f", &operand);
+        switch (operator) {
+            case '+':
+                result += operand;
+                break;
+            case '-':
+                result -= operand;
+                break;
+            case '*':
+                result *= operand;
+                break;
+            case '/':
+                result /= operand;
+                break;
+        }
     }
 
     printf("value of expression: %.1f", result);

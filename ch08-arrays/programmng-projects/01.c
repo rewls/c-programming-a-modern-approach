@@ -20,27 +20,27 @@ int main(void)
     while (n > 0) {
         digit = n % N_DIGITS;
         if (digit_seen[digit]) {
-	    digit_repeated[digit] = true;
+            digit_repeated[digit] = true;
         } else {
-	    digit_seen[digit] = true;
+            digit_seen[digit] = true;
         }
         n /= N_DIGITS;
     }
 
     for (digit = 0; digit < N_DIGITS; digit++) {
-	if (digit_repeated[digit] == true) {
-	    break;
-	}
+        if (digit_repeated[digit] == true) {
+            break;
+        }
     }
 
     if (digit < N_DIGITS) {
         printf("Repeated digit(s):");
         for (digit = 0; digit < N_DIGITS; digit++) {
-	    if (digit_repeated[digit] == true) {
-		printf(" %d", digit);
-	    }
-	}
-	printf("\n");
+            if (digit_repeated[digit] == true) {
+                printf(" %d", digit);
+            }
+        }
+        printf("\n");
     } else {
         printf("No repeated digit\n");
     }

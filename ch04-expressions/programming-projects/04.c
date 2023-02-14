@@ -13,7 +13,7 @@ int main(void)
     scanf("%d", &n);
 
     printf("In octal, your number is: %d%d%d%d%d",
-	    n / 8 / 8 / 8 / 8 % 8, n / 8 / 8 / 8 % 8, n / 8 / 8 % 8, n / 8 % 8, n % 8);
+            n / 8 / 8 / 8 / 8 % 8, n / 8 / 8 / 8 % 8, n / 8 / 8 % 8, n / 8 % 8, n % 8);
 
     return 0;
 }

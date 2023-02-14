@@ -12,11 +12,11 @@ int main(void)
     printf("Enter phone number: ");
 
     while ((ch = getchar()) != '\n') {
-	if (ch >= 'A' && ch <= 'Y') {
-	    printf("%d", (ch - 'A') / 3 + 2);
-	} else {
-	    putchar(ch);
-	}
+        if (ch >= 'A' && ch <= 'Y') {
+            printf("%d", (ch - 'A') / 3 + 2);
+        } else {
+            putchar(ch);
+        }
     }
 
     return 0;

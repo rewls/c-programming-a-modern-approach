@@ -10,7 +10,7 @@ int num_digits(int n)
     int n_digits;
 
     for (n_digits = 0; n > 0; n_digits++) {
-	n /= 10;
+        n /= 10;
     }
 
     return n_digits;

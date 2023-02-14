@@ -14,9 +14,9 @@ int main(void)
 
     /* Euclid`s algorithm for computing the GCD */
     while (n != 0) {
-	temp = m % n;
-	m = n;
-	n = temp;
+        temp = m % n;
+        m = n;
+        n = temp;
     }
 
     gcd = m

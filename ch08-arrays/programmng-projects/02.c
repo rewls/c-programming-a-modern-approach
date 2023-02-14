@@ -24,13 +24,13 @@ int main(void)
 
     printf("Digit:      ");
     for (digit = 0; digit < N_DIGITS; digit++) {
-	printf("%3d", digit);
+        printf("%3d", digit);
     }
     printf("\n");
 
     printf("Occurrences:");
     for (digit = 0; digit < N_DIGITS; digit++) {
-	printf("%3d", digit_count[digit]);
+        printf("%3d", digit_count[digit]);
     }
 
     return 0;

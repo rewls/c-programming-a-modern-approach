@@ -15,7 +15,7 @@ int main(void)
 
     printf("Enter message to be encrypted: ");
     for (i = 0; (ch = getchar()) != '\n'; i++) {
-	message[i] = ch;
+        message[i] = ch;
     }
     count = i;
 
@@ -24,13 +24,13 @@ int main(void)
 
     printf("Encrypted message: ");
     for (i = 0; i < count; i++) {
-	if (message[i] >= 'A' && message[i] <= 'Z') {
-	    putchar(((message[i] - 'A') + shift_amount) % N_ALPHABETS + 'A');
-	} else if (message[i] >= 'a' && message[i] <= 'z') {
-	    putchar(((message[i] - 'a') + shift_amount) % N_ALPHABETS + 'a');
-	} else {
-	    putchar(message[i]);
-	}
+        if (message[i] >= 'A' && message[i] <= 'Z') {
+            putchar(((message[i] - 'A') + shift_amount) % N_ALPHABETS + 'A');
+        } else if (message[i] >= 'a' && message[i] <= 'z') {
+            putchar(((message[i] - 'a') + shift_amount) % N_ALPHABETS + 'a');
+        } else {
+            putchar(message[i]);
+        }
     }
 
     return 0;

@@ -13,11 +13,11 @@ int main(void) {
     printf("Enter a sentence: ");
 
     while ((ch = getchar()) != '\n') {
-	switch (toupper(ch)) {
-	    case 'A': case 'E': case 'I': case 'O': case 'U':
-		count++;
-		break;
-	}
+        switch (toupper(ch)) {
+            case 'A': case 'E': case 'I': case 'O': case 'U':
+                count++;
+                break;
+        }
     }
 
     printf("Your sentence contains %d vowels.", count);

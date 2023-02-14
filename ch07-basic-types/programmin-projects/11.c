@@ -14,12 +14,12 @@ int main(void)
     scanf(" %c", &first_initial);
 
     while ((ch = getchar()) != ' ')
-	;
+        ;
     while ((ch = getchar()) == ' ')
-	;
+        ;
 
     do {
-	putchar(ch);
+        putchar(ch);
     } while ((ch = getchar()) != '\n' && ch != ' ');
 
     printf(", %c", first_initial);

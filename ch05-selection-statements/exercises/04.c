@@ -12,7 +12,7 @@ int main(void)
     j = 0;
 
     printf("%d", i < j ? -1 :
-	         i > j ? 1 : 0);
+                 i > j ? 1 : 0);
 
     return 0;
 }

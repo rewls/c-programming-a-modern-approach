@@ -28,36 +28,36 @@ int main(void)
     printf("Enter an RPN expression: ");
     scanf(" %c", &ch);
     for (;;) {
-	switch (ch) {
-	    case '0': case '1': case '2': case '3': case '4':
-	    case '5': case '6': case '7': case '8': case '9':
-		push(ch - '0');
-		break;
-	    case '+':
-		push(pop() + pop());
-		break;
-	    case '-':
-		operand2 = pop();
-		operand1 = pop();
-		push(operand1 - operand2);
-		break;
-	    case '*':
-		push(pop() * pop());
-		break;
-	    case '/':
-		operand2 = pop();
-		operand1 = pop();
-		push(operand1 / operand2);
-		break;
-	    case '=':
-		printf("Value of expression: %d\n", pop());
-		make_empty();
-		printf("Enter an RPN expression: ");
-		break;
-	    default:
-		exit(EXIT_FAILURE);
-	}
-	scanf(" %c", &ch);
+        switch (ch) {
+            case '0': case '1': case '2': case '3': case '4':
+            case '5': case '6': case '7': case '8': case '9':
+                push(ch - '0');
+                break;
+            case '+':
+                push(pop() + pop());
+                break;
+            case '-':
+                operand2 = pop();
+                operand1 = pop();
+                push(operand1 - operand2);
+                break;
+            case '*':
+                push(pop() * pop());
+                break;
+            case '/':
+                operand2 = pop();
+                operand1 = pop();
+                push(operand1 / operand2);
+                break;
+            case '=':
+                printf("Value of expression: %d\n", pop());
+                make_empty();
+                printf("Enter an RPN expression: ");
+                break;
+            default:
+                exit(EXIT_FAILURE);
+        }
+        scanf(" %c", &ch);
     }
 
     return 0;
@@ -71,10 +71,10 @@ void make_empty(void)
 void push(int i)
 {
     if (is_full()) {
-	stack_overflow();
+        stack_overflow();
     } else {
-	contents[top] = i;
-	top++;
+        contents[top] = i;
+        top++;
     }
 }
 
@@ -92,7 +92,7 @@ void stack_overflow(void)
 int pop(void)
 {
     if (is_empty()) {
-	stack_underflow();
+        stack_underflow();
     }
     top--;
     return contents[top];

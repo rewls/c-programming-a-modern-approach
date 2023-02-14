@@ -16,11 +16,11 @@ int main(void)
 
     for (i = 1; i <= n; i += 1) {
         printf("%20d%20d\n", i, i * i);
-	if (i % 24 == 0) {
-	    printf("Press Enter to continue...");
-	    while (getchar() != '\n')
-		;
-	}
+        if (i % 24 == 0) {
+            printf("Press Enter to continue...");
+            while (getchar() != '\n')
+                ;
+        }
     }
 
     return 0;

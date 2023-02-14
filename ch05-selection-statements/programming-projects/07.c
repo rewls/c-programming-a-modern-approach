@@ -15,27 +15,27 @@ int main(void)
     max1 = min1 = a;
 
     if (a < b) {
-	max1 = b;
+        max1 = b;
     } else {
-	min1 = b;
+        min1 = b;
     }
 
     max2 = min2 = c;
 
     if (c < d) {
-	max2 = d;
+        max2 = d;
     } else {
-	min2 = d;
+        min2 = d;
     }
 
     max = max1;
     min = min1;
 
     if (max1 < max2) {
-	max = max2;
+        max = max2;
     }
     if (min1 > min2) {
-	min = min2;
+        min = min2;
     }
 
     printf("Largest: %d\n", max);

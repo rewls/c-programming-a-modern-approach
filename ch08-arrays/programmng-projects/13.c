@@ -17,20 +17,20 @@ int main(void)
     scanf(" %c", &first_initial);
 
     while (getchar() != ' ')
-	;
+        ;
     while ((last_name[0] = getchar()) == ' ')
-	;
+        ;
 
     i = 0;
     while (last_name[i] != '\n' && last_name[i] != ' ') {
-	i++;
-	last_name[i] = getchar();
+        i++;
+        last_name[i] = getchar();
     }
     count = i;
 
     printf("You entered the name: ");
     for (i = 0; i < count; i++) {
-	printf("%c", last_name[i]);
+        printf("%c", last_name[i]);
     }
     printf(", %c", first_initial);
 

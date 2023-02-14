@@ -13,5 +13,6 @@ int check(int x, int y, int n)
 int main(void)
 {
     printf("%d", check(1, 5, 3));
+
     return 0;
 }
