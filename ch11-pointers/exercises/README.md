@@ -1,5 +1,7 @@
 # Ch11 Pointers Exercises
 
+- page 255~256
+
 ## Section 11.2 Pointer Variables
 
 ### 1
