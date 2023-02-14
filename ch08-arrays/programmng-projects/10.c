@@ -1,6 +1,7 @@
 /*
  * 10.c (Chapter 8, page 180, Programming Project 10)
- * Ask the user to enter the amount of taxable income, then display the tax due
+ * Ask user to enter a time, then displays the departure and arrival times for the flight
+ * whose departure time is closest to that entered by the user.
  */
 
 #include <stdio.h>
@@ -11,8 +12,8 @@ int main(void)
 {
     const int departure_times[SIZE] = {8 * 60, 9 * 60 + 43, 11 * 60 + 19, 12 * 60 + 47,
                                        14 * 60, 15 * 60 + 45, 19 * 60, 21 * 60 + 45},
-          arrival_times[SIZE] = {10 * 60 + 16, 11 * 60 + 52, 13 * 60 + 31, 15 * 60,
-                                 16 * 60 + 8 , 17 * 60 + 55, 21 * 60 + 20, 23 * 60 + 58};
+              arrival_times[SIZE] = {10 * 60 + 16, 11 * 60 + 52, 13 * 60 + 31, 15 * 60,
+                                     16 * 60 + 8 , 17 * 60 + 55, 21 * 60 + 20, 23 * 60 + 58};
     int hour, minute, time, i, temp;
 
     printf("Enter a 24-hour time: ");

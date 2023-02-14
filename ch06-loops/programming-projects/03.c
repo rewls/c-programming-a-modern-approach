@@ -15,7 +15,7 @@ int main(void)
     n = num;
     m = denom;
 
-    /* Euclid`s algorithm for computing the GCD */
+    /* Euclid's algorithm for computing the GCD */
     while (n != 0) {
         temp = m % n;
         m = n;
