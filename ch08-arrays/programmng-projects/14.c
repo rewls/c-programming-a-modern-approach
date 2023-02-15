@@ -9,31 +9,33 @@
 
 int main(void)
 {
-    char words[SIZE] = {0}, term_char, ch;
-    int i, j, count;
+    char sentence[SIZE], term_char, ch;
+    int i, j, end_word;
 
     printf("Enter a sentence: ");
-    for (i = 0; (ch = getchar()) != '.' && ch != '?' && ch != '!'; i++) {
-        words[i] = ch;
+    for (i = 0;
+            (ch = getchar()) != '.' && ch != '?' && ch != '!' && i < SIZE
+            ; i++) {
+        sentence[i] = ch;
     }
     term_char = ch;
-    count = i;
+    i--;
 
     printf("Reversal of sentence: ");
-    for (i = count - 1; i >= 0; i--) {
-        ch = words[i];
-        for (j = i; words[j] != ' ' && j >= 0; j--)
+    for (; i >= 0; i--) {
+        end_word = i;
+        for (; sentence[i] != ' ' && i >= 0; i--)
             ;
-        i = j;
+        j = i;
         do {
             j++;
-            printf("%c", words[j]);
-        } while (words[j] != ch);
+            putchar(sentence[j]);
+        } while (j != end_word);
         if (i > 0) {
-            printf(" ");
+            putchar(' ');
         }
     }
-    printf("%c", term_char);
+    putchar(term_char);
 
     return 0;
 }
