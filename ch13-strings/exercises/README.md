@@ -164,5 +164,80 @@ void get_extension(const char *file_name, char *extension)
 ```c
 void build_index_url(const char *domain, char *index_url)
 {
+    strcat(strcat(strcpy(index_url, "http://www."), domain), "/index.html");
+}
+```
+
+## Section 13.6 String Idioms
+
+### 14
+
+```
+Grinch
+
+```
+
+### 15
+
+#### a
+
+- 3
+
+#### b
+
+- 0
+
+#### c
+
+- `t`에 없는 `s`의 첫 번째 character의 index
+
+### 16
+
+```c
+int count_spaces(const char s[])
+{
+    int count = 0;
+
+    while (*s) {
+        if (*s++ == ' ') {
+            count++;
+        }
+    }
+
+    return count;
+}
+```
+
+### 17
+
+```c
+bool test_extension(const char *file_name,
+                    const char *extension)
+{
+    while (*file_name && *file_name++ != '.')
+        ;
+    while (*file_name && *extension &&
+            toupper(*file_name++) == toupper(*extension++))
+        ;
+    if (!*file_name && !*extension++) {
+        return true;
+    }
+
+    return false;
+}
+```
+
+### 18
+
+```c
+void remove_filename(char *url)
+{
+    while (*url) {
+        url++;
+    }
+    while (*url != '/') {
+        url--;
+    }
+    *url = '\0';
 }
 ```
