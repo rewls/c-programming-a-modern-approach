@@ -5,7 +5,8 @@
 
 #include <stdio.h>
 
-int main(void) {
+int main(void)
+{
     float average;
     int length, n;
     char ch;

@@ -6,7 +6,8 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int main(void) {
+int main(void)
+{
     int count = 0;
     char ch;
 

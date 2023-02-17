@@ -10,7 +10,7 @@
 
 #define SIZE 100
 
-bool is_palindrome(char message[], int n);
+bool is_palindrome(char *message, int n);
 
 int main(void)
 {
@@ -39,7 +39,7 @@ int main(void)
  * is_palindrome: return true if message is a palindrom,
  *                return false if it's not
  */
-bool is_palindrome(char message[], int n)
+bool is_palindrome(char *message, int n)
 {
     char *p, *q;
 

@@ -8,7 +8,8 @@
 
 #define SIZE 100
 
-int main(void) {
+int main(void)
+{
     char ch[SIZE + 1];
     int i, count;
 
