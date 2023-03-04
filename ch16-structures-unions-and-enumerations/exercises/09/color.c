@@ -1,4 +1,4 @@
-#include <stdbool.h>
+#include <stdbool.h>  /* C99 Only */
 #include "color.h"
 
 int process_bound(int n);

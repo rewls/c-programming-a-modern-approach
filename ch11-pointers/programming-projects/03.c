@@ -53,4 +53,3 @@ int compute_gcd(int m, int n)
 
     return m;
 }
-

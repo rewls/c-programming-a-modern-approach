@@ -164,7 +164,7 @@ void analyze_hand(void)
 
 /*
  * sort_rank: Sorts rank of hand,
- *              using selection sort
+ *            using selection sort
  */
 void sort_rank(void)
 {

@@ -56,6 +56,7 @@ void split_time(long total_sec, int *hr, int *min, int *sec)
     total_sec %= 60;
     *sec = total_sec;
 }
+```
 
 ### 6
 

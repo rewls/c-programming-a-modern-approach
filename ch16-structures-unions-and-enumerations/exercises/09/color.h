@@ -1,7 +1,7 @@
 #ifndef COLOR_H
 #define COLOR_H
 
-#include <stdbool.h>
+#include <stdbool.h>  /* C99 Only */
 
 struct color {
     int red;
