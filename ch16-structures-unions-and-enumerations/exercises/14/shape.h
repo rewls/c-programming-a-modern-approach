@@ -1,3 +1,7 @@
+/*
+ * shape.h (Chapter 16, page 411, Exercise 14)
+ */
+
 #ifndef SHAPE_H
 #define SHAPE_H
 

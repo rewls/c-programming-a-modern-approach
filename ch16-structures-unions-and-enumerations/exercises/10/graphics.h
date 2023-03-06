@@ -1,3 +1,7 @@
+/*
+ * graphics.h (Chapter 16, page 409, Exercise 10)
+ */
+
 #ifndef GRAPHICS_H
 #define GRAPHICS_H
 

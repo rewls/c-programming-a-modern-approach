@@ -1,5 +1,6 @@
 /*
  * 06.c (Chapter 16, page 408, Exercise 6)
+ * Prints return values of split_time.
  */
 
 #include <stdio.h>

@@ -1,3 +1,8 @@
+/*
+ * 14.c (Chapter 16, page 411, Exercise 14)
+ * Prints return values of compute_area and move.
+ */
+
 #include <stdio.h>
 #include "shape.h"
 

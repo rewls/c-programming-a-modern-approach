@@ -1,3 +1,7 @@
+/*
+ * color.c (Chapter 16, page 409, Exercise 9)
+ */
+
 #include <stdbool.h>  /* C99 Only */
 #include "color.h"
 

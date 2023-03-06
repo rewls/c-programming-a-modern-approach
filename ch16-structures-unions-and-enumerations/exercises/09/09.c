@@ -1,3 +1,8 @@
+/*
+ * 09.c (Chapter 16, page 409, Exercise 9)
+ * Prints return values of make_color, getRed, equal_color, brighter and darker.
+ */
+
 #include <stdio.h>
 #include "color.h"
 

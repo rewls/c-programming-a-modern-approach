@@ -1,3 +1,7 @@
+/*
+ * shape.c (Chapter 16, page 411, Exercise 14)
+ */
+
 #include <math.h>
 #include "shape.h"
 
@@ -19,5 +23,3 @@ struct shape move(struct shape s, int x, int y)
 
     return s;
 }
-
-

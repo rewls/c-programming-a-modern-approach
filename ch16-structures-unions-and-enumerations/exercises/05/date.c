@@ -1,3 +1,7 @@
+/*
+ * date.c (Chapter 16, page 408, Exercise 5)
+ */
+
 #include "date.h"
 
 /* 

@@ -1,6 +1,6 @@
 /*
  * 05.c (Chapter 16, page 408, Exercise 5)
- * Prints return values of day_of_year and of compare_dates 
+ * Prints return values of day_of_year and compare_dates.
  */
 
 #include <stdio.h>

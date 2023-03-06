@@ -1,3 +1,7 @@
+/*
+ * date.h (Chapter 16, page 408, Exercise 5)
+ */
+
 #ifndef DATE_H
 #define DATE_H
 

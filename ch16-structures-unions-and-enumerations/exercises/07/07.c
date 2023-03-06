@@ -1,6 +1,7 @@
 /*
  * 07.c (Chapter 16, page 408, Exercise 7)
- * Prints return values of reduce_fraction,
+ * Prints return values of reduce_fraction, add_fraction, subtract_fraction,
+ * multiply_fraction and divide_fraction.
  */
 
 #include <stdio.h>

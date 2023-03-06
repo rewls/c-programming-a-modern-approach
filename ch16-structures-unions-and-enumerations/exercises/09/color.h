@@ -1,3 +1,7 @@
+/*
+ * color.h (Chapter 16, page 409, Exercise 9)
+ */
+
 #ifndef COLOR_H
 #define COLOR_H
 

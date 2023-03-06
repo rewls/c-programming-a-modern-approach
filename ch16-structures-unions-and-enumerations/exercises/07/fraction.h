@@ -1,3 +1,7 @@
+/*
+ * fraction.h (Chapter 16, page 408, Exercise 7)
+ */
+
 #ifndef FRACTION_H
 #define FRACTION_H
 

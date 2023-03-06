@@ -1,3 +1,8 @@
+/*
+ * 10.c (Chapter 16, page 409, Exercise 10)
+ * Prints return values of compute_area, compute_center, move and is_in.
+ */
+
 #include <stdio.h>
 #include "graphics.h"
 

@@ -1,3 +1,7 @@
+/*
+ * fraction.c (Chapter 16, page 408, Exercise 7)
+ */
+
 #include <stdio.h>
 #include "fraction.h"
 

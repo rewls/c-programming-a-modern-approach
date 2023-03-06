@@ -1,3 +1,7 @@
+/*
+ * graphics.c (Chapter 16, page 409, Exercise 10)
+ */
+
 #include <stdbool.h>  /* C99 Only */
 #include "graphics.h"
 
