@@ -23,7 +23,7 @@ struct shape {
 
 /*
  * compute_area:
- *     Computes the area of s
+ *     Computes the area of s. If s.shape_kind is invalid value, returns -1.
  */
 float compute_area(struct shape s);
 
@@ -37,7 +37,8 @@ struct shape move(struct shape s, int x, int y);
 /*
  * scale:
  *     Scales s by a factor of c, returning the modified version of s.
+ *     If s.shape_kind is invalid value, returns -1
  */
-struct shape scale
+struct shape scale(struct shape s, int c);
 
 #endif

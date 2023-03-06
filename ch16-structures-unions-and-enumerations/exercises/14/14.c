@@ -17,5 +17,8 @@ int main(void)
     s = move(s, 1, 2);
     PRINT_VALUE("%d, %d", s.center.x, s.center.y);
 
+    s = scale(s, 2);
+    PRINT_VALUE("%d", s.u.circle.radius);
+
     return 0;
 }
