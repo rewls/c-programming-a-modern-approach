@@ -435,4 +435,193 @@ s.u.circle.radius = 5;
 
 ### 14
 
+#### a
 
+```c
+float compute_area(struct shape s)
+{
+    switch (s.shape_kind) {
+	case RECTANGLE:
+	    return s.u.rectangle.height * s.u.rectangle.width;
+	case CIRCLE:
+	    return PI * powf(s.u.circle.radius, 2.0f);
+    }
+
+    return -1;
+}
+```
+
+#### b
+
+```c
+struct shape move(struct shape s, int x, int y)
+{
+    s.center.x += x;
+    s.center.y += y;
+
+    return s;
+}
+```
+
+#### c
+
+```c
+struct shape scale(struct shape s, int c)
+{
+    switch (s.shape_kind) {
+	case RECTANGLE:
+	    s.u.rectangle.height *= c;
+	    s.u.rectangle.width *= c;
+	case CIRCLE:
+	    s.u.circle.radius *= c;
+    }
+
+    return s;
+}
+```
+
+## Section 16.5 Enumerations
+
+### 15
+
+#### a
+
+```c
+enum week_days {SUN, MON, TUE, WED, THU, FRI, SAT};
+```
+
+#### b
+
+```c
+typedef enum {SUN, MON, TUE, WED, THU, FRI, SAT} Week_days;
+```
+
+### 16
+
+#### a
+
+- true
+
+#### b
+
+- false
+
+- enumeration은 macro와 달리 C의 scope rule을 따른다.
+
+#### c
+
+- true
+
+#### d
+
+- false
+
+#### e
+
+- true
+
+### 17
+
+- legal: a, b, c, d, e
+
+- safe: a, d, e
+
+### 18
+
+#### a
+
+```c
+typedef enum {PAWN, KNIGHT, BISHOP, ROOK, QUEEN, KING, EMPTY} Piece;
+typedef enum {BLACK, WHITE} Color;
+```
+
+#### b
+
+```c
+typedef struct {
+    Piece piece;
+    Color color;
+} Square;
+```
+
+#### c
+
+```c
+Square board[8][8];
+```
+
+#### d
+
+```c
+Square board[8][8] = {
+    {{ROOK, BLACK}, {KNIGHT, BLACK}, {BISHOP, BLACK, {QUEEN, BLACK},
+    {KING, BLACK}, {BISHOP, BLACK}, {KNIGHT, BLACK}, {ROOK, BLACK}},
+    {{PAWN, BLACK}, {PAWN, BLACK}, {PAWN, BLACK}, {PAWN, BLACK},
+    {PAWN, BLACK}, {PAWN, BLACK}, {PAWN, BLACK}, {PAWN, BLACK}},
+    {{EMPTY, BLACK}, {EMPTY, BLACK}, {EMPTY, BLACK}, {EMPTY, BLACK},
+    {EMPTY, BLACK}, {EMPTY, BLACK}, {EMPTY, BLACK}, {EMPTY, BLACK}},
+    {{EMPTY, BLACK}, {EMPTY, BLACK}, {EMPTY, BLACK}, {EMPTY, BLACK},
+    {EMPTY, BLACK}, {EMPTY, BLACK}, {EMPTY, BLACK}, {EMPTY, BLACK}},
+    {{PAWN, WHITE}, {PAWN, WHITE}, {PAWN, WHITE}, {PAWN, WHITE}, 
+    {PAWN, WHITE}, {PAWN, WHITE}, {PAWN, WHITE}, {PAWN, WHITE}},
+    {{ROOK, WHITE}, {KNIGHT, WHITE}, {BISHOP, WHITE, {QUEEN, WHITE},
+    {KING, WHITE}, {BISHOP, WHITE}, {KNIGHT, WHITE}, {ROOK, WHITE}}
+}
+```
+
+### 19
+
+```c
+struct pinball_machine {
+    char name[40];
+    int year;
+    enum {EM, SS} type;
+    int players;
+};
+```
+
+### 20
+
+```c
+switch (direction) {
+    case EAST:  x++; break;
+    case WEST:  x--; break;
+    case SOUTH: y++; break;
+    case NORTH: y--; break;
+}
+```
+
+### 21
+
+#### a
+
+- `NUL`: 0, `SOH`: 1, `STX`: 2, `ETX`: 3
+
+#### b
+
+- `VT`: 11, `FF`: 12, `CR`: 13
+
+#### c
+
+- `SO`: 14, `ST`: 15, `DLE`: 16, `CAN`: 24, `EM`: 25
+
+#### d
+
+- `ENQ`: 45, `ACK`: 46, `EEL`: 47, `LF`: 37, `ETB `: 38, `ESC`: 39
+
+### 22
+
+#### a
+
+```c
+int piece_value[6] = {200, 9, 5, 3, 3, 1};
+```
+
+#### b
+
+```c
+int piece_value[6] = {
+    [KING] = 200, [QUEEN] = 9, [ROOK] = 5,
+    [BISHOP] = 3, [KNIGHT] = 3, [PAWN] = 1
+}
+```

@@ -9,17 +9,33 @@
 
 float compute_area(struct shape s)
 {
-    if (s.shape_kind == RECTANGLE) {
-        return s.u.rectangle.height * s.u.rectangle.width;
+    switch (s.shape_kind) {
+	case RECTANGLE:
+	    return s.u.rectangle.height * s.u.rectangle.width;
+	case CIRCLE:
+	    return PI * powf(s.u.circle.radius, 2.0f);
     }
 
-    return PI * powf(s.u.circle.radius, 2.0f);
+    return -1;
 }
 
 struct shape move(struct shape s, int x, int y)
 {
     s.center.x += x;
     s.center.y += y;
+
+    return s;
+}
+
+struct shape scale(struct shape s, int c)
+{
+    switch (s.shape_kind) {
+	case RECTANGLE:
+	    s.u.rectangle.height *= c;
+	    s.u.rectangle.width *= c;
+	case CIRCLE:
+	    s.u.circle.radius *= c;
+    }
 
     return s;
 }
