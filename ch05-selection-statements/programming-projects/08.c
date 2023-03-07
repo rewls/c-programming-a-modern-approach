@@ -4,6 +4,8 @@
  * whose departure time is closest to that entered by the user.
  */
 
+#include <stdio.h>
+
 int main(void)
 {
     int hour, minute, time, temp1, temp2;

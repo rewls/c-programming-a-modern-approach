@@ -14,7 +14,7 @@ int main(void)
     printf("Enter second date (mm/dd/yy): ");
     scanf("%d/%d/%d", &month2, &day2, &year2);
 
-    if (year1 * 360 + month1 * 30 + day < year2 * 360 + month2 * 30 + day2) {
+    if (year1 * 360 + month1 * 30 + day1 < year2 * 360 + month2 * 30 + day2) {
         printf("%d/%d/%.2d is earlier than %d/%d/%.2d", month1, day1, year1, month2, day2, year2);
     } else {
         printf("%d/%d/%.2d is earlier than %d/%d/%.2d", month2, day2, year2, month1, day1, year1);
